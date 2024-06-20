@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+
+    <link rel="stylesheet" text="text/css" href="/styles/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="container">
+        <header>Form Aduan Gizi</header>
+        <form action="/complaints" method="post" class="form">
+            <div class="input-box">
+                <label>Nama Lengkap Pasien</label>
+                <input type="text" name="nama" placeholder="Masukkan Nama Lengkap" required>
+            </div>
+            <div class="input-box">
+                <label>Alamat</label>
+                <input type="text" name="alamat" placeholder="Masukkan Alamat Lengkap">
+            </div>
+            <div class="input-box">
+                <label>No Telp</label>
+                <input type="text" name="telp" placeholder="Masukkan Nomor Telepon">
+            </div>
+            <div class="input-box">
+                <label>Tanggal Lahir</label>
+                <input type="date" name="tanggalLahir" placeholder="Masukkan Tanggal Lahir">
+            </div>
+            <div class="gender-box">
+                <h3>Jenis Kelamin Pasien</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check-male" name="jenisKelamin" value="Laki-laki"/>
+                        <label for="check-male">Laki-laki</label>    
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-female" name="jenisKelamin" value="Perempuan"/>
+                        <label for="check-female">Perempuan</label>    
+                    </div>
+                </div>
+            </div>
+            <div class="input-box">
+                <label>Penyakit</label>
+                <input type="text" name="penyakit" placeholder="Masukkan Nama Penyakit">
+            </div>
+            <div class="input-box">
+                <label>Nama Ruang Pasien</label>
+                <input type="text" name="ruang" placeholder="Masukkan Nama Ruang">
+            </div>
+            <div class="input-box">
+                <label>Aduan</label>
+                <input type="text" name="aduan" placeholder="Masukkan Aduan Gizi">
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>

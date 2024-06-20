@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" type="text/css" href="/styles/style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <header>
+        <h1>Admin Page</h1>
+        <a href="">Logout</a>
+    </header> -->
+    <div class="side-menu">
+        <ul>
+            <li><img src="" alt=""> Dashboard</li>
+            <li><img src="" alt=""> Pasien</li>
+            <li><img src="" alt=""> Aduan</li>
+            <li><img src="" alt=""> Log out</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <h1><%= pasienCount %></h1>
+                        <h3>Pasien</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1><%= aduanCount %></h1>
+                        <h3>Aduan</h3>
+                    </div>
+                </div>
+                <!-- <div class="card">
+                    <div class="box">
+                        <h1>111</h1>
+                        <h3>Pasien</h3>
+                    </div>
+                </div> -->
+            </div>
+            <div class="content-2">
+                <div class="rekap-aduan">
+                    <div class="title">
+                        <h2>Rekap Aduan</h2>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Nama</th>
+                            <th>Alamat</th>
+                            <th>No Telp</th>
+                            <th>Tanggal lahir</th>
+                            <th>Jenis Kelamin</th>
+                            <th>Penyakit</th>
+                            <th>Ruang</th>
+                            <th>Aduan</th>
+                        </tr>
+                        <% complaints.forEach(function(complaint) { %>
+                            <tr>
+                                <td><%= complaint.nama %></td>
+                                <td><%= complaint.alamat %></td>
+                                <td><%= complaint.telp %></td>
+                                <td><%= complaint.tanggalLahir %></td>
+                                <td><%= complaint.jenisKelamin %></td>
+                                <td><%= complaint.penyakit %></td>
+                                <td><%= complaint.ruang %></td>
+                                <td><%= complaint.aduan %></td>
+                            </tr>
+                        <% }); %>                 
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <main>
+        <h2>Data Pasien</h2>
+        <table>
+            
+        </table>
+        <h2>Komplain</h2>
+        <form action="submit_complain.php" method="post">
+            <label for="complain">Komplain:</label>
+            <textarea name="complain" id="complain" cols="30" rows="10"></textarea>
+            <br>
+            <label for="WEBP file">Unggah Gambar</label>
+            <input type="file" name="WEBP file" id="WEBP file" accept="WEBP file/*">
+            <br>
+            <button type="submit">Kirim Komplain</button>
+        </form>
+    </main> --> -->
+</body>
+</html>

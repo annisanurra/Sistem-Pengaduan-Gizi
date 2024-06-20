@@ -1,0 +1,134 @@
+.terima-kasih {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+}
+.terima-kasih-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 35px 8px;
+}
+.form-telah-terkirim {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+}
+.form-telah-terkirim-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+}
+.line-mdcircle-twotone-to-conf-icon {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.frame-group {
+  align-self: stretch;
+  height: 535px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  font-size: 32px;
+}
+.kembali-ke-beranda {
+  position: relative;
+  font-size: 16px;
+  font-family: var(--font-montserrat);
+  color: var(--color-white);
+  text-align: left;
+}
+.home-button-container {
+  cursor: pointer;
+  border: 0;
+  padding: 16px var(--padding-xl);
+  background-color: #9c5b4b;
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  white-space: nowrap;
+}
+.home-button-container:hover {
+  background-color: #b57563;
+}
+.frame-parent,
+.submited-form-page {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.frame-parent {
+  width: 592px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 44px 52px;
+  gap: var(--gap-5xs);
+  max-width: 100%;
+}
+.submited-form-page {
+  width: 100%;
+  position: relative;
+  background-color: #90cedb;
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: center;
+  padding: 154px var(--padding-xl);
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: 60px;
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+}
+@media screen and (max-width: 750px) {
+  .terima-kasih {
+    font-size: 48px;
+  }
+  .form-telah-terkirim {
+    font-size: 26px;
+  }
+  .frame-parent {
+    padding-top: var(--padding-10xl);
+    padding-bottom: var(--padding-10xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 675px) {
+  .frame-parent {
+    padding-left: var(--padding-7xl);
+    padding-right: var(--padding-7xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .terima-kasih {
+    font-size: 36px;
+  }
+  .form-telah-terkirim {
+    font-size: 19px;
+  }
+  .frame-parent {
+    padding-top: var(--padding-xl);
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

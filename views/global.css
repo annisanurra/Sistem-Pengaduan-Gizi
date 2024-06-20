@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-montserrat: Montserrat;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #000;
+
+  /* Gaps */
+  --gap-5xs: 8px;
+
+  /* Paddings */
+  --padding-xl: 20px;
+  --padding-7xl: 26px;
+  --padding-10xl: 29px;
+
+  /* Border radiuses */
+  --br-5xs: 8px;
+}
